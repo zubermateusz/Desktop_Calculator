@@ -19,6 +19,7 @@ public class Main {
         } else if (intArr.length == 3) {
             // Call calculate(int, int, int)
             // TO DO: Fill in the appropriate code here
+            System.out.println((intArr[0] + intArr[1]) * intArr[2]);
         }
     }
 
