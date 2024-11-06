@@ -15,7 +15,7 @@ public class Main {
         if (intArr.length == 2) {
             // Call calculate(int, int) 
             // TO DO: Fill in the appropriate code here
-
+            System.out.println(intArr[0] * intArr[1]);
         } else if (intArr.length == 3) {
             // Call calculate(int, int, int)
             // TO DO: Fill in the appropriate code here
