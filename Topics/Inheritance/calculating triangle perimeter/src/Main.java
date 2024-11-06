@@ -18,6 +18,12 @@ public class Main {
     }
 
     // Derived class Square
+    class Square extends Polygon{
+        public int getArea(){
+            int area = getSideLength() * getSideLength();
+            return area;
+        }
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
