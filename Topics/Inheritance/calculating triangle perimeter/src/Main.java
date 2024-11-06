@@ -18,7 +18,7 @@ public class Main {
     }
 
     // Derived class Square
-    class Square extends Polygon{
+    static class Square extends Polygon{
         public int getArea(){
             int area = getSideLength() * getSideLength();
             return area;
@@ -28,6 +28,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int sideLength = scanner.nextInt();
+        Polygon polygon = new Polygon();
+        polygon.setSideLength(sideLength);
 
         // Create an instance of Square
 
