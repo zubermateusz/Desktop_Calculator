@@ -9,9 +9,12 @@ public class Main {
 
         // Set the details of the book
         // Implement here
-
+        book.setTitle(title);
+        book.setAuthor(author);
+        book.setPages(100);
         // Print the details of the book
         // Implement here
+        System.out.println("Title: " + book.getTitle() + ", Author: " + book.getAuthor() + ", " + "Pages: " + book.getPages());
     }
 }
 
