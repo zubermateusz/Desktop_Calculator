@@ -46,6 +46,12 @@
             <option value="$PROJECT_DIR$/Topics/Defining classes/Representing time as a class" />
             <option value="$PROJECT_DIR$/Topics/Defining classes/The keyword" />
             <option value="$PROJECT_DIR$/Topics/Defining classes/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Type casting/A condition" />
+            <option value="$PROJECT_DIR$/Topics/Type casting/Converting and printing double values as integers" />
+            <option value="$PROJECT_DIR$/Topics/Type casting/Possible implicit castings" />
+            <option value="$PROJECT_DIR$/Topics/Type casting/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Type casting/Where explicit casting is required" />
+            <option value="$PROJECT_DIR$/Topics/Type casting/Widening casting" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
