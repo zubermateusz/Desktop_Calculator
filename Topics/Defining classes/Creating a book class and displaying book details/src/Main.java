@@ -20,6 +20,8 @@ class Book {
     private String author;
     private int pages;
 
+
+
     // Getters and setters
     // Implement here
 }
