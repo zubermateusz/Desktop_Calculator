@@ -20,7 +20,29 @@ class Book {
     private String author;
     private int pages;
 
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getTitle() {
+        return title;
+    }
 
     // Getters and setters
     // Implement here
