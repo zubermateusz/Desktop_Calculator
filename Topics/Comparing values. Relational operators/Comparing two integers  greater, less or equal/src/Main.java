@@ -12,6 +12,14 @@ public class Main {
         // Print '>' if num1 is greater than num2
         // Print '<' if num1 is less than num2
         // Print '=' if num1 is equal to num2
-
+        if (num1 > num2) {
+            System.out.println(">");
+        } else {
+            if (num1 < num2) {
+                System.out.println("<");
+            } else {
+                System.out.println("=");
+            }
+        }
     }
 }
