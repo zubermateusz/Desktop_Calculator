@@ -177,7 +177,20 @@ public class Calculator extends JFrame {
     }
 
     private static String getResult(String text) {
-        String[] splitText = text.split("\\+");
-        return text + " = " + (Integer.parseInt(splitText[0]) + Integer.parseInt(splitText[1]));
+        String[] splitText = text.split("\\+-x");
+        double result = 0;
+        if (text.contains("-")) {
+            result = (Integer.parseInt(splitText[0]) - Integer.parseInt(splitText[1]));
+        }
+        if (text.contains("+")) {
+            result = (Integer.parseInt(splitText[0]) + Integer.parseInt(splitText[1]));
+        }
+        if (text.contains("x")) {
+            result = (Integer.parseInt(splitText[0]) * Integer.parseInt(splitText[1]));
+        }
+        if (text.contains("/")) {
+            result = ((double) Integer.parseInt(splitText[0]) / Integer.parseInt(splitText[1]));
+        }
+        return text + " = " + result;
     }
 }
