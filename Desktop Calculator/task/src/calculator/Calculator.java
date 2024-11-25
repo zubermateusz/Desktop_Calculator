@@ -69,15 +69,35 @@ public class Calculator extends JFrame {
         button0.setVisible(true);
         add(button0);
 
+        JButton button9 = new JButton("9");
+        button9.setName("9");
+        button9.setBounds(140, 70, 45, 45);
+        button9.setBackground(Color.lightGray);
+        button9.setVisible(true);
+        add(button9);
 
-        JButton solve = new JButton("Solve");
-        solve.setName("Solve");
-        solve.setBounds(70, 320, 100, 50);
-        solve.setBackground(Color.lightGray);
-        solve.setVisible(true);
-        add(solve);
+        JButton button6 = new JButton("6");
+        button6.setName("6");
+        button6.setBounds(140, 130, 45, 45);
+        button6.setBackground(Color.lightGray);
+        button6.setVisible(true);
+        add(button6);
 
-        solve.addActionListener(actionEvent -> {
+        JButton button3 = new JButton("3");
+        button3.setName("3");
+        button3.setBounds(140, 190, 45, 45);
+        button3.setBackground(Color.lightGray);
+        button3.setVisible(true);
+        add(button3);
+
+        JButton buttonSolve = new JButton("=");
+        buttonSolve.setName("Solve");
+        buttonSolve.setBounds(140, 190, 45, 45);
+        buttonSolve.setBackground(Color.lightGray);
+        buttonSolve.setVisible(true);
+        add(buttonSolve);
+
+        buttonSolve.addActionListener(actionEvent -> {
             equationTextField.getText();
             equationTextField.setText(Calculator.getResult(equationTextField.getText()));
         });
