@@ -92,10 +92,38 @@ public class Calculator extends JFrame {
 
         JButton buttonSolve = new JButton("=");
         buttonSolve.setName("Solve");
-        buttonSolve.setBounds(140, 190, 45, 45);
+        buttonSolve.setBounds(140, 250, 45, 45);
         buttonSolve.setBackground(Color.lightGray);
         buttonSolve.setVisible(true);
         add(buttonSolve);
+
+        JButton buttonDivide = new JButton("/");
+        buttonDivide.setName("/");
+        buttonDivide.setBounds(200, 70, 45, 45);
+        buttonDivide.setBackground(Color.lightGray);
+        buttonDivide.setVisible(true);
+        add(buttonDivide);
+
+        JButton buttonMultiply = new JButton("x");
+        buttonMultiply.setName("x");
+        buttonMultiply.setBounds(200, 130, 45, 45);
+        buttonMultiply.setBackground(Color.lightGray);
+        buttonMultiply.setVisible(true);
+        add(buttonMultiply);
+
+        JButton buttonAdd = new JButton("+");
+        buttonAdd.setName("+");
+        buttonAdd.setBounds(200, 190, 45, 45);
+        buttonAdd.setBackground(Color.lightGray);
+        buttonAdd.setVisible(true);
+        add(buttonAdd);
+
+        JButton buttonSubtract = new JButton("-");
+        buttonSubtract.setName("-");
+        buttonSubtract.setBounds(200, 250, 45, 45);
+        buttonSubtract.setBackground(Color.lightGray);
+        buttonSubtract.setVisible(true);
+        add(buttonSubtract);
 
         buttonSolve.addActionListener(actionEvent -> {
             equationTextField.getText();
