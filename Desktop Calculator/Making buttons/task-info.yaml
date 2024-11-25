@@ -10,5 +10,13 @@ files:
     visible: false
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/13795#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #2
+
+    EquationTextField contains wrong operator.
+        Your output: *
+    Expected output: x
+  time: "Mon, 25 Nov 2024 21:08:44 UTC"
 record: -1
