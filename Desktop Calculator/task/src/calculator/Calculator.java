@@ -130,6 +130,50 @@ public class Calculator extends JFrame {
             equationTextField.setText(Calculator.getResult(equationTextField.getText()));
         });
 
+        button0.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "0");
+        });
+        button1.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "1");
+        });
+        button2.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "2");
+        });
+        button3.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "3");
+        });
+        button4.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "4");
+        });
+        button5.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "5");
+        });
+        button6.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "6");
+        });
+        button7.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "7");
+        });
+        button8.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "8");
+        });
+        button9.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "9");
+        });
+        buttonDivide.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "/");
+        });
+        buttonMultiply.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "x");
+        });
+        buttonAdd.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "+");
+        });
+        buttonSubtract.addActionListener(actionEvent -> {
+            equationTextField.setText(equationTextField.getText() + "-");
+        });
+
+
     }
 
     private static String getResult(String text) {
