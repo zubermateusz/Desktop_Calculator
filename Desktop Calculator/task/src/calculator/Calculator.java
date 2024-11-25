@@ -20,6 +20,12 @@ public class Calculator extends JFrame {
         equationTextField.setVisible(true);
         add(equationTextField);
 
+        JButton button7 = new JButton("7");
+        button7.setName("7");
+        button7.setBounds(50, 100, 50, 50);
+        button7.setBackground(Color.lightGray);
+        button7.setVisible(true);
+        add(button7);
 
         JButton solve = new JButton("Solve");
         solve.setName("Solve");
@@ -37,6 +43,6 @@ public class Calculator extends JFrame {
 
     private static String getResult(String text) {
         String[] splitText = text.split("\\+");
-        return text + "=" + (Integer.parseInt(splitText[0]) + Integer.parseInt(splitText[1]));
+        return text + " = " + (Integer.parseInt(splitText[0]) + Integer.parseInt(splitText[1]));
     }
 }
