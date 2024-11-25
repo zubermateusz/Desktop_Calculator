@@ -191,6 +191,6 @@ public class Calculator extends JFrame {
         if (text.contains("/")) {
             result = (Integer.parseInt(splitText[0]) / Integer.parseInt(splitText[1]));
         }
-        return text + " = " + result;
+        return text + "=" + result;
     }
 }
