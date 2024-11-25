@@ -15,7 +15,7 @@ public class Calculator extends JFrame {
 
         JTextField equationTextField = new JTextField("EquationTextField");
         equationTextField.setName("EquationTextField");
-        equationTextField.setBounds(70, 50, 100, 50);
+        equationTextField.setBounds(50, 50, 200, 30);
         equationTextField.setText("");
         equationTextField.setVisible(true);
         add(equationTextField);
