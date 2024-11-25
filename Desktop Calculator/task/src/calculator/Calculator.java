@@ -36,7 +36,7 @@ public class Calculator extends JFrame {
     }
 
     private static String getResult(String text) {
-        int result = Integer.parseInt(String.valueOf(text.charAt(0))) + Integer.parseInt(String.valueOf(text.charAt(2)));
-        return text + "=" + result;
+        String[] splitText = text.split("\\+");
+        return text + "=" + (Integer.parseInt(splitText[0]) + Integer.parseInt(splitText[1]));
     }
 }
