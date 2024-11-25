@@ -12,8 +12,11 @@ public class Main {
         String result = "";
 
         // Your code here
-
+        for (int i = 0; i < input.length(); i++) {
+            result += input.charAt(i);
+            result += input.charAt(i);
+        }
         // Print the result to the standard output
-        System.out.println(result); 
+        System.out.println(result);
     }
 }
