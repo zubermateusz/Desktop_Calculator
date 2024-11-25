@@ -104,7 +104,7 @@ public class Calculator extends JFrame {
         buttonDivide.setVisible(true);
         add(buttonDivide);
 
-        JButton buttonMultiply = new JButton("x");
+        JButton buttonMultiply = new JButton("*");
         buttonMultiply.setName("Multiply");
         buttonMultiply.setBounds(200, 130, 45, 45);
         buttonMultiply.setBackground(Color.lightGray);
@@ -164,7 +164,7 @@ public class Calculator extends JFrame {
             equationTextField.setText(equationTextField.getText() + "/");
         });
         buttonMultiply.addActionListener(actionEvent -> {
-            equationTextField.setText(equationTextField.getText() + "x");
+            equationTextField.setText(equationTextField.getText() + "*");
         });
         buttonAdd.addActionListener(actionEvent -> {
             equationTextField.setText(equationTextField.getText() + "+");
@@ -177,7 +177,7 @@ public class Calculator extends JFrame {
     }
 
     private static String getResult(String text) {
-        String[] splitText = text.split("\\+|\\-|\\*regex |\\/");
+        String[] splitText = text.split("\\+|\\-|\\*|\\/");
         int result = 0;
         if (text.contains("-")) {
             result = (Integer.parseInt(splitText[0]) - Integer.parseInt(splitText[1]));
@@ -185,7 +185,7 @@ public class Calculator extends JFrame {
         if (text.contains("+")) {
             result = (Integer.parseInt(splitText[0]) + Integer.parseInt(splitText[1]));
         }
-        if (text.contains("x")) {
+        if (text.contains("*")) {
             result = (Integer.parseInt(splitText[0]) * Integer.parseInt(splitText[1]));
         }
         if (text.contains("/")) {
