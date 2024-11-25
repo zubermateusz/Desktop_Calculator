@@ -177,7 +177,7 @@ public class Calculator extends JFrame {
     }
 
     private static String getResult(String text) {
-        String[] splitText = text.split("\\+-x");
+        String[] splitText = text.split("\\+|\\-|\\*regex |\\/");
         double result = 0;
         if (text.contains("-")) {
             result = (Integer.parseInt(splitText[0]) - Integer.parseInt(splitText[1]));
