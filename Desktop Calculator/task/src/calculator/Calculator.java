@@ -41,6 +41,35 @@ public class Calculator extends JFrame {
         button1.setVisible(true);
         add(button1);
 
+        JButton button8 = new JButton("8");
+        button8.setName("8");
+        button8.setBounds(80, 70, 45, 45);
+        button8.setBackground(Color.lightGray);
+        button8.setVisible(true);
+        add(button8);
+
+        JButton button5 = new JButton("5");
+        button5.setName("5");
+        button5.setBounds(80, 130, 45, 45);
+        button5.setBackground(Color.lightGray);
+        button5.setVisible(true);
+        add(button5);
+
+        JButton button2 = new JButton("2");
+        button2.setName("2");
+        button2.setBounds(80, 190, 45, 45);
+        button2.setBackground(Color.lightGray);
+        button2.setVisible(true);
+        add(button2);
+
+        JButton button0 = new JButton("0");
+        button0.setName("0");
+        button0.setBounds(80, 250, 45, 45);
+        button0.setBackground(Color.lightGray);
+        button0.setVisible(true);
+        add(button0);
+
+
         JButton solve = new JButton("Solve");
         solve.setName("Solve");
         solve.setBounds(70, 320, 100, 50);
