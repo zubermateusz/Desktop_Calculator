@@ -14,6 +14,6 @@ public class Main {
         // Your code here
 
         // Print the result to the standard output
-        System.out.println(result);
+        System.out.println(result); 
     }
 }
