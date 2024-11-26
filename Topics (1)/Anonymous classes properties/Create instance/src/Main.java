@@ -2,10 +2,29 @@ class CreateInstance {
 
     public static SuperClass create() {
 
-        SuperClass instance = /* create an instance of an anonymous class here, 
+        SuperClass instance = new SuperClass() {
+            @Override
+            public void method2() {
+
+                String name = new Object(){}.getClass().getEnclosingMethod().getName();
+                System.out.println(name);
+
+
+            }
+
+            @Override
+            public void method3() {
+
+                String name = new Object(){}.getClass().getEnclosingMethod().getName();
+                System.out.println(name);
+
+            }
+        };/* create an instance of an anonymous class here,
                                  do not forget ; on the end */
 
         // call the overridden methods
+        instance.method2();
+        instance.method3();
 
         return instance;
     }
