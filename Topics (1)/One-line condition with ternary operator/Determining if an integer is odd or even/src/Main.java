@@ -9,5 +9,6 @@ public class Main {
         // Write a one-line condition using ternary operator to check if the number is even or odd
         // If the number is even, print "even"
         // Otherwise, print "odd"
+        System.out.println(number % 2 == 0 ? "even" : "odd");
     }
 }
