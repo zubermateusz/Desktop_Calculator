@@ -3,25 +3,25 @@ import java.util.Scanner;
 public class Main {
     public static String transformString(String s) {
         // implement your string processing here
-        String sAfterChanged = "";
+        StringBuilder sAfterChanged = new StringBuilder();
         for (char c : s.toCharArray()) {
             if (c > '0' && c <= '9') {
-                sAfterChanged += --c;
+                sAfterChanged.append(--c);
                 continue;
             }
             if (c == '0') {
-                sAfterChanged += "9";
+                sAfterChanged.append("9");
                 continue;
             }
             if (c >= 'a' && c < 'z') {
-                sAfterChanged += ++c;
+                sAfterChanged.append(++c);
                 continue;
             }
             if (c == 'z') {
-                sAfterChanged += "a";
+                sAfterChanged.append("a");
             }
         }
-        return sAfterChanged;
+        return sAfterChanged.toString();
     }
 
     public static void main(String[] args) {
